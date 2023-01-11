@@ -1,0 +1,314 @@
+@font-face {
+	font-family: Gilroy-Medium;
+	src: url('../fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+	font-family: Gilroy-Bold;
+	src: url('../fonts/Gilroy-Bold.ttf');
+}
+
+body {
+  margin: 0;
+  color: #070707;
+}
+
+h1, h2 { margin: 0; }
+
+.main {
+  max-width: 945px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.main a { text-decoration: none; }
+
+#home {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.mainmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid #828282;
+  font-family: Gilroy-Bold;
+  font-size: 18px;
+}
+
+.color-grey {
+  color: #828282;
+}
+
+#modal_btn,
+#modal_close {
+  display: none;
+}
+
+.whoami {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.myname {
+  font-family: Gilroy-Bold;
+  font-size: 48px;
+  width: 80px;
+}
+
+#info {
+  width: 160px;
+}
+
+.font-gm18 {
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+}
+
+.languages {
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  writing-mode: vertical-lr;
+  color: #828282;
+}
+
+#lang-ua, #lang-en {
+  cursor: pointer;
+}
+
+.color-black,
+.active-lang,
+.mainmenu a:hover,
+.languages span:hover {
+  color: #070707 !important;
+}
+
+.foto {
+  max-width: 945px;
+  height: 388px;
+  margin-bottom: 104px;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.block {
+  text-align: center;
+  padding: 110px 0;
+}
+
+.block-gray {
+  background-color: #F6F6F6;
+}
+
+.aboutme {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.aboutme div {
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.header2name {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+}
+
+.skills__pre {
+  margin-top: 70px;
+}
+
+.skills__def {
+  width: auto;
+  max-width: 945px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__details {
+  width: 166px;
+  margin-top: 80px;
+}
+
+.skill__name {
+  font-family: Gilroy-Bold;
+  font-size: 14px;
+  margin: 25px auto 40px;
+  width: 80px;
+  height: 10px;
+}
+
+.skill__stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__img {
+  margin: 100px auto 45px;
+  width: auto;
+  max-width: 945px;
+}
+
+.project__img img {
+  width: 100%;
+}
+
+.footer-text {
+  width: 300px;
+  margin: 20px auto 30px;
+}
+
+.footer-button {
+  margin: 0 auto;
+  padding: 10px 30px;
+  width: fit-content;
+  background-color: #070707;
+  color: #FFFFFF;
+  font-family: Gilroy-Bold;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.footer-links {
+  max-width: 342px;
+  margin: 85px auto 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  color: #828282;
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainmenu,
+  .whoami,
+  .skills__def,
+  .project {
+    margin: 0 30px;
+  }
+
+  .foto {
+    max-width: 745px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .mainmenu,
+  .whoami,
+  .project {
+    margin: 0 30px;
+  }
+
+  .foto {
+    max-width: 465px;
+  }
+
+  .skills__def {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .skill__details {
+    margin: 80px 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    /* display: none; */
+    display: block;
+    position: fixed;
+    right: 500px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mainmenu {
+    display: block;
+    position: relative;
+    border-bottom: none;
+    font-size: 34px;
+  }
+
+  .mainmenu div {
+    margin: 68px 0 0 26px;
+  }
+
+  .whoami {
+    display: block;
+    padding: 50px 30px 35px;
+  }
+
+  .myname {
+    margin-bottom: 23px;
+  }
+
+  .languages {
+    position: fixed;
+    font-size: 34px;
+    bottom: -500px;
+    right: 30px;
+  }
+
+  #modal_btn {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+  }
+
+  #modal_close {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+  }
+
+  .foto {
+    background-image: url("../img/header-sm.jpg");
+    height: 478px;
+    margin-bottom: 83px;
+  }
+
+  .block {
+    padding: 80px 0;
+  }
+
+  .skills__pre {
+    margin-top: 50px;
+  }
+
+  .skills__def {
+    width: fit-content;
+    display: block;
+  }
+
+  .project {
+    margin: 0 30px;
+  }
+
+  .project__img {
+    margin: 70px auto 33px;
+    width: auto;
+    max-width: 945px;
+  }
+  
+  .footer-button,
+  .footer-links {
+    width: 315px;
+  }
+}
